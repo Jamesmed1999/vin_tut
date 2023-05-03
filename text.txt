@@ -29,3 +29,5 @@ No, in the event of working on the wrong branch do the following.
 use command "git stash" this stashes your changes think of it like putting them in a box
 use command "git checkout BRANCH_NAME" to changes branches
 use command "git stash apply" to take the stashed  changes and apply them to the correct  branch
+
+:)
