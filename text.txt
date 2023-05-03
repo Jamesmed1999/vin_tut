@@ -1,0 +1,33 @@
+1. Create a new repo on github
+2. open git bash
+3. make your way to the directory of your choosing
+4. run command "git init -b main" //initalize main branch for project
+5. run command "git remote add origin URL_OF_PROJECT" //links gethub repo to local repo
+6. run command "git add ." //adds all files to upload
+7. run command "git commit -m "COMMIT COMMENT" " //cannot push files to repo without comment -m stands for message
+8. run command "git push -u origin BRANCH_NAME" //pushes the files to remote repo branch. You can pick and choose which branch you want to upload to. -u stands for upstream.
+9. you should now see the changes in online repo
+
+//WHAT ARE BRANCHES?
+branches are named after trees. Think of the main branch as the trunk. Each branch is created for a new feature. They are sperated so multiple people
+can work on features without disrupting the main, working code base. Once the feature is tested and approved you can merge the branch into main adding the feature.
+This is known as Source control mangment.
+
+//I made a mistake! Can i roll it back?
+Yes, no change besides deleting branches is permanent. We can cross that rode if we get there.
+
+//DO I need a readme?
+You should add a read me to the project after it is in a working state. Make sure to include instructions on what you need to run the program and how to run it.
+
+//Creating branches
+run command "git checkout -b BRANCH NAME" <- this is shorthand for "git branch BRANCH_NAME" and "git checkout BRANCH_NAME"
+to switch branches use "git checkout BRANCH NAME"
+ALWAYS MAKE SURE YOU ARE ON THE RIGHT BRANCH BEFORE MAKING ANY CHANGES
+
+//I MADE CHANGES ON THE WRONG BRANCH IS ALL MY WORK LOST????????
+No, in the event of working on the wrong branch do the following.
+use command "git stash" this stashes your changes think of it like putting them in a box
+use command "git checkout BRANCH_NAME" to changes branches
+use command "git stash apply" to take the stashed  changes and apply them to the correct  branch
+
+:)
