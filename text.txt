@@ -31,3 +31,4 @@ use command "git checkout BRANCH_NAME" to changes branches
 use command "git stash apply" to take the stashed  changes and apply them to the correct  branch
 
 :)
+:(
